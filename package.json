@@ -1,0 +1,25 @@
+{
+  "name": "Ethereum004",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
+  },
+  "dependencies": {
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-native-fs": "^2.9.7",
+    "web3": "^0.19.1"
+  },
+  "devDependencies": {
+    "babel-jest": "22.0.6",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.0.6",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
