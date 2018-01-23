@@ -1,4 +1,6 @@
 rootProject.name = 'Ethereum004'
+include ':react-native-geth'
+project(':react-native-geth').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-geth/android')
 
 include ':app'
 include ':react-native-fs'

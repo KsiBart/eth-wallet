@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { StackNavigator } from 'react-navigation';
-import HomeScreen from "./components/home";
-import AccountScreen from "./components/account"
+import HomeScreen from "./home";
+import AccountScreen from "./account"
 
 const Tabs = StackNavigator({
   Home: { screen: HomeScreen },
@@ -10,3 +10,4 @@ const Tabs = StackNavigator({
 });
 
 export default Tabs
+
