@@ -22,6 +22,11 @@ const global = StyleSheet.create({
     width: 25,
     marginRight: 10,
   },
+  headerText: {
+    fontSize: 20,
+    margin: 10,
+    textAlign: 'center'
+  },
 });
 
 export default global

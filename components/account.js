@@ -33,6 +33,7 @@ class Account extends Component {
     }
   }
   render() {
+    const { navigate } = this.props.navigation;
     return (
         <View style={styles.container}>
           <Button
@@ -45,6 +46,15 @@ class Account extends Component {
               title="Account Balance At"
               color="#841584"
           />
+        <View style={{flex: 0.06, flexDirection: 'row'}}/>
+        <View>
+
+          <Button
+              onPress={() => navigate('DevSettings')}
+              title="Settings"
+              color="#841584"
+          />
+        </View>
         </View>
     )
   }
