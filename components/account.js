@@ -5,6 +5,8 @@ import {
   Platform,
   StyleSheet,
   Text,
+  TouchableHighlight,
+  Image,
   View,
   Alert,
   Button
@@ -32,6 +34,14 @@ class Account extends Component {
       console.error('setAccount', error)
     }
   }
+
+  static navigationOptions = ({ navigation }) => ({
+    headerRight:
+        <TouchableHighlight onPress={() => navigation.navigate('DevSettings')}>
+          <Image style={styles.icon}
+                 source={require('../styles/images/settings_dev.png')}/>
+        </TouchableHighlight>
+  });
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -41,20 +51,12 @@ class Account extends Component {
               title="Account Balance"
               color="#841584"
           />
+          <View style={{flex: 0.2, flexDirection: 'column'}}/>
           <Button
               onPress={this.onPressBalanceAt}
               title="Account Balance At"
               color="#841584"
           />
-        <View style={{flex: 0.06, flexDirection: 'row'}}/>
-        <View>
-
-          <Button
-              onPress={() => navigate('DevSettings')}
-              title="Settings"
-              color="#841584"
-          />
-        </View>
         </View>
     )
   }

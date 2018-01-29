@@ -8,6 +8,7 @@
     "android-linux": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res && react-native run-android"
   },
   "dependencies": {
+    "babel-preset-flow": "^6.23.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-fs": "^2.9.7",

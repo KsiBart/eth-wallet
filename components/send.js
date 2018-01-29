@@ -31,8 +31,8 @@ class Send extends Component {
   }
 
   sendTransaction() {
-    Alert.alert('Alert',
-                'Msg',
+    Alert.alert(`Addr: ${this.state.address}`,
+                `Amount: ${this.state.amount}`,
                 [{text: 'OK', onPress: () => console.log('OK Pressed')},],
                 { cancelable: false })
   }

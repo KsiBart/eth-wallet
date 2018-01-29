@@ -86,7 +86,7 @@ export default class Home extends Component<{}> {
             </View>
           </View>
 
-          <View style={{flex: 0.06, flexDirection: 'row'}}>
+          <View style={{flex: 0.07, flexDirection: 'row'}}>
             <Button
                 title='Stats'
                 onPress={() => navigate('Stats')}
